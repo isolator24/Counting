@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="ExamEntities">
+    <EntitySetMapping Name="Countings">
+      <EntityTypeMapping TypeName="Models.Counting">
+        <MappingFragment StoreEntitySet="Counting">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Incrementers">
+      <EntityTypeMapping TypeName="Models.Incrementer">
+        <MappingFragment StoreEntitySet="Incrementer">
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

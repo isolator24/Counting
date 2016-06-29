@@ -1,0 +1,16 @@
+﻿@model Counting.Models.Incrementer
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Counter</h2>
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.Id)
+    @Html.DisplayFor(model => model.Count);
+    <br />
+    <input  value="Increment" type="submit" />
+}
+
+
+
