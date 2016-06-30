@@ -1,7 +1,11 @@
 # Counting
 Exam
 
-Execute to create the table of the sql server
+Instructions:
+Execute the sql statement below.
+
+
+=======================================================================================================
 
 USE [Exam]
 GO
@@ -26,5 +30,10 @@ GO
 
 ALTER TABLE [dbo].[Incrementer] ADD  DEFAULT ((0)) FOR [Count]
 GO
-
+INSERT INTO [Exam].[dbo].[Incrementer]
+           ([Count])
+     VALUES
+           (0)
+           
+GO
 
